@@ -1,0 +1,5 @@
+github.com/howeyc/fsnotify v0.9.1-0.20151003194602-f0c08ee9c607 h1:pYACEr/iXEWeTFnOxHXJZW8h90zbA62XMBUqb3VLrno=
+github.com/howeyc/fsnotify v0.9.1-0.20151003194602-f0c08ee9c607/go.mod h1:41HzSPxBGeFRQKEEwgh49TRw/nKBsYZ2cF1OzPjSJsA=
+github.com/silenceper/log v0.0.0-20171204144354-e5ac7fa8a76a h1:COf2KvPmardI1M8p2fhHsXlFS2EXSQygbGgcDYBI9Wc=
+github.com/silenceper/log v0.0.0-20171204144354-e5ac7fa8a76a/go.mod h1:nyN/YUSK3CgJjtNzm6dVTkcou+RYXNMP+XLSlzQu0m0=
+gopkg.in/yaml.v1 v1.0.0-20140924161607-9f9df34309c0/go.mod h1:WDnlLJ4WF5VGsH/HVa3CI79GS0ol3YnhVnKP89i0kNg=

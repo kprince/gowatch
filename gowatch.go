@@ -166,7 +166,22 @@ func Kill() {
 func Restart(appname string) {
 	//log.Debugf("kill running process")
 	Kill()
-	go Start(appname)
+	go func() {
+		Swag(appname)
+		Start(appname)
+	}()
+}
+
+//Start start app
+func Swag(appname string) {
+	log.Infof("Regenerating swagger files: %s ...\n", appname)
+	cmd = exec.Command("swag init")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	cmd.Args = append([]string{appname}, cfg.CmdArgs...)
+	cmd.Env = append(os.Environ(), cfg.Envs...)
+	go cmd.Run()
+	started <- true
 }
 
 //Start start app
